@@ -314,3 +314,34 @@ hr {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+.box-nuevo {
+    border:1.5px solid;
+    border-radius: 10px;
+    color: #0971CE;
+    height:102px;
+    width: 284px;
+    background-image: url("../assets/back-nuevo.png");
+}
+
+.box-nuevo:hover {
+    border-radius: 10px;
+    background-color: #0971CE;
+    background-image: url("../assets/back-nuevo-hover.png");
+
+}
+.box-usado {
+    border:1.5px solid;
+    border-radius: 10px;
+    color: #0971CE;
+    height:102px;
+    width: 284px;
+    background-image: url("../assets/back-usado.png");
+}
+
+.box-usado:hover {
+    border-radius: 10px;
+    background-color: #0971CE;
+    background-image: url("../assets/back-usado-hover.png");
+
+}
