@@ -262,3 +262,45 @@ hr {
 				line-height: 20px;
     }
 }
+
+.containerover {
+  position: relative;
+  width: 284px;
+}
+
+.imageover {
+  display: block;
+  width: 284px;
+  height: 102px;
+}
+.selectcontainer {
+    margin: 10px auto;
+    width: 60%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.textover {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
