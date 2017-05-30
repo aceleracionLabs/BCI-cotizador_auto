@@ -278,20 +278,20 @@ hr {
 
 .btn-dropdown {
     border: 1px solid #0971CE;
-    border-radius: 10px;
+    border-radius: 5px;
     background: none;
     color: #333;
-    width: 18vw;
-    margin-right: 20px;
+    width: 20vw;
+    margin-right: 30px;
     height: 50px;
+    text-align: left;
+    padding-left: 14px;
 }
 .dropdown-left {
     float: left;
-    width: 50%;
 }
 .dropdown-right {
     float: right;
-        width: 50%;
 }
 
 .box-nuevo {
