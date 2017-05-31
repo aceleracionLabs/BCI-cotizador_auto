@@ -331,6 +331,34 @@ hr {
     background-image: url("../assets/back-usado-hover.png");
 }
 
+.box-deducible {
+    border: 1.3px solid;
+    border-radius: 5px;
+    color: #0971CE;
+    height: 50px;
+    width: 100px;
+    float: left;
+}
+
+.box-deducible p {
+    color: #0971CE;
+    text-align: center;
+    font-size: 15px;
+    vertical-align: middle;
+    padding-top: 12px;
+}
+
+.box-deducible:hover {
+    border-radius: 5px;
+    background-color: #0971CE;
+}
+
+.box-deducible:hover p {
+    color: #FFF;
+}
+
+
+
 .notificaton-bar {
     background: none;
     padding: 0;
@@ -380,6 +408,7 @@ hr {
     width: 250px;
     height: 30px;
     font-size: 10px;
+    text-align: center;
 }
 
 .notice div a {
@@ -486,6 +515,16 @@ textarea::-webkit-input-placeholder {
         margin: 10px auto 40px auto;
         width: 60vw;
     }
+    .selectcontainer-deducible {
+        margin: 10px auto 40px auto;
+        width: 55vw;
+        max-width: 450px;
+    }
+    .selectcontainer-deducible h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 }
 .progress {
     margin-top: 20px;
@@ -548,4 +587,23 @@ textarea::-webkit-input-placeholder {
 ::-ms-input-placeholder { /* Microsoft Edge */
    color:    #FFF;
     text-align: center;
+}
+
+.panel-primary {
+  border-color: #4E4E4D;
+}
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #4E4E4D;
+  border-color: #4E4E4D;
+}
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #4E4E4D;
+}
+.panel-primary > .panel-heading .badge {
+  color: #4E4E4D;
+  background-color: #fff;
+}
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #4E4E4D;
 }

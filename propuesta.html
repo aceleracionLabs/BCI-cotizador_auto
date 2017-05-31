@@ -173,13 +173,13 @@
         <div class="breadcrumb row">
               <div class="center">
           <div class="col-sm-4 col-md-4 col-lg-4 nopadding">
-            <div class="numberCircle">1</div>
+            <div class="numberCircle_off">1</div>
             <div>
               <p> TUS DATOS</p>
             </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-4 nopadding">
-            <div class="numberCircle_off">2</div>
+            <div class="numberCircle">2</div>
             <div>
               <p> PROPUESTA</p>
             </div>
@@ -198,70 +198,47 @@
       <div class="container center">
 
 
-        <div class="row selectcontainer">
-          <h3>Selecciona tu tipo de vehículo:</h3>
 
-          <div class="col-sm-6 col-md-6 col-lg-6 nopadding">
-            <div class="box-usado"></div>
+        <div class="row selectcontainer-deducible">
+          <h3>Seleccionar deducible:  <a href="#" data-toggle="tooltip" title="Descripción de deducible"><i class="fa fa-info-circle" aria-hidden="true"></i>
+
+</a></h3>
+
+          <div class="col-sm-3 col-md-3 col-lg-3 nopadding">
+            <div class="box-deducible"><p>UF 0</p></div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-6 nopadding pull-right">
-            <div class="box-nuevo"></div>
+          <div class="col-sm-3 col-md-3 col-lg-3 nopadding">
+            <div class="box-deducible"><p>UF 3</p></div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 nopadding">
+            <div class="box-deducible"><p>UF 5</p></div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 nopadding">
+            <div class="box-deducible"><p>UF 10</p></div>
           </div>
         </div>
       </div>
 
 
 
-
-      <div class="form-container">
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="control-group form-group">
-            <div class="controls">
-              <input type="text" class="form-control loading" id="name" required data-validation-required-message="Por favor ingresa tu nombre."
-                placeholder="Patente" autofocus>
-              <p class="help-block"></p>
+       <!-- Content Row -->
+        <div class="row">
+          
+            <div class="col-md-12">
+                <div class="panel panel-primary text-center">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">PREMIUM + GIFT CARD DE $15.000</h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="price"><sup>$</sup>39<sup>99</sup></span>
+                        <span class="period">per month</span>
+                    </div>
+                  
+                </div>
             </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor ingresa tu Email."
-                placeholder="Marca">
-            </div>
-          </div>
-
-
-
-
-          <div class="btn-group">
-            <div class="dropdown dropdown-left">
-              <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">Modelo
-  <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li class="divider"></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
-            </div>
-            <div class="dropdown dropdown-right pull-right">
-              <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">Año
-  <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
-            </div>
-          </div>
-
-
-
-          <div id="success"></div>
-          <!-- For success/fail messages -->
-          <a href="seleccion.html" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Continuar</a>
-
-        </form>
-      </div>
+     
+        </div>
+        <!-- /.row -->
 
 
 
@@ -305,6 +282,11 @@
         interval: 5000 //changes the speed
       })
     </script>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
 </body>
 
 </html>
