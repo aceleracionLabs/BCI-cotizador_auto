@@ -9,6 +9,7 @@ body {
     padding-top: 90px;
 }
 
+
 h3 {
     font-size: 14px;
     color: #333333;
@@ -34,13 +35,27 @@ footer img {
 footer p {
     color: #FFF;
 }
+.modal-body p {
+    text-align: center;
+    color: #CCC;
+    font-size: 18px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.center {
+    margin: 0 auto;
+    width: 80%;
+}
+
 .page-content {
     margin-bottom: 30px;
 }
+
 .bc-footer {
-        background-color: #4F4E4E;
-        margin-top: 30px;
-        width: 100vw;
+    background-color: #4F4E4E;
+    margin-top: 30px;
+    width: 100vw;
 }
 
 .white-bg {
@@ -147,6 +162,7 @@ footer p {
     display: inline-block;
     max-width: 32vw;
 }
+
 .caret {
     float: right;
     vertical-align: middle;
@@ -156,7 +172,7 @@ footer p {
     border-top: 8px dashed;
     border-right: 8px solid transparent;
     border-left: 8px solid transparent;
-    }
+}
 
 .numberCircle {
     border-radius: 50%;
@@ -220,6 +236,7 @@ hr {
     height: 50px;
     vertical-align: middle;
     margin-top: 20px;
+    padding-top: 15px;
 }
 
 .loading {
@@ -249,6 +266,162 @@ hr {
     height: 100%;
     padding: 8px;
     width: auto;
+}
+
+.selectcontainer {
+    margin: 10px auto 40px auto;
+    width: 64vw;
+}
+
+.selectcontainer h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-dropdown {
+    border: 1px solid #0971CE;
+    border-radius: 5px;
+    background: none;
+    color: #333;
+    width: 20vw;
+    margin-right: 10px;
+    height: 50px;
+    text-align: left;
+    padding-left: 14px;
+}
+
+.dropdown-left {
+    float: left;
+}
+
+.dropdown-right {
+    float: right;
+}
+
+.box-nuevo {
+    border: 1.5px solid;
+    border-radius: 5px;
+    color: #0971CE;
+    height: 90px;
+    width: 160px;
+    background-image: url("../assets/back-nuevo.png");
+    float: left;
+}
+
+.box-nuevo:hover {
+    border-radius: 5px;
+    background-color: #0971CE;
+    background-image: url("../assets/back-nuevo-hover.png");
+}
+
+.box-usado {
+    border: 1.5px solid;
+    border-radius: 5px;
+    color: #0971CE;
+    height: 90px;
+    width: 160px;
+    background-image: url("../assets/back-usado.png");
+    float: right;
+}
+
+.box-usado:hover {
+    border-radius: 5px;
+    background-color: #0971CE;
+    background-image: url("../assets/back-usado-hover.png");
+}
+
+.notificaton-bar {
+    background: none;
+    padding: 0;
+    float: right;
+}
+
+.notice {
+    position: relative;
+    display: inline-block;
+    background-color: inherit;
+    font-size: 1.5em;
+    min-width: 50px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.notice div {
+    display: none;
+    width: 290px;
+    padding: 10px;
+    font-size: .75em;
+    text-align: center;
+    background-color: #006EB6;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    margin-left: -75px;
+    margin-top: 10px;
+}
+
+.notice div h3 {
+    color: #FFF;
+    font-size: 9px;
+}
+
+.notice div p {
+    color: #FFF;
+    font-size: 9px;
+}
+
+.notice div input {
+    color: #FFF;
+    border: 1px solid #FFF;
+    background: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.notice div a {
+    color: #FFF;
+    border: 1px solid #FFF;
+    background: none;
+    border-radius: 8px;
+    width: 250px;
+    vertical-align: middle;
+    padding-top: 8px;
+    font-size: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.notice div a:hover {
+    background-color: #FFF;
+    color: #333;
+}
+
+.notice div input:-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #FFF;
+    font-size: 10px;
+}
+
+.notice div:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 11px solid #006EB6;
+    position: absolute;
+    top: -10px;
+    left: 90%;
+    margin-left: -10px;
+}
+
+.notice:hover div {
+    display: block;
 }
 
 @media (min-width:768px) {
@@ -281,65 +454,72 @@ hr {
         padding: 8px 0px 8px 40px;
         line-height: 20px;
     }
-}
-
-.selectcontainer {
-    margin: 10px auto 40px auto;
-    width: 60vw;
+    .box-nuevo {
+        border: 1.5px solid;
+        border-radius: 10px;
+        color: #0971CE;
+        height: 102px;
+        width: 284px;
+        background-image: url("../assets/back-nuevo.png");
+        float: left;
     }
-
-.selectcontainer h3 {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 20px;
+    .box-nuevo:hover {
+        border-radius: 10px;
+        background-color: #0971CE;
+        background-image: url("../assets/back-nuevo-hover.png");
     }
-
-.btn-dropdown {
-    border: 1px solid #0971CE;
-    border-radius: 5px;
-    background: none;
-    color: #333;
-    width: 20vw;
-    margin-right: 10px;
-    height: 50px;
-    text-align: left;
-    padding-left: 14px;
+    .box-usado {
+        border: 1.5px solid;
+        border-radius: 10px;
+        color: #0971CE;
+        height: 102px;
+        width: 284px;
+        background-image: url("../assets/back-usado.png");
+        float: right;
+    }
+    .box-usado:hover {
+        border-radius: 10px;
+        background-color: #0971CE;
+        background-image: url("../assets/back-usado-hover.png");
+    }
+    .selectcontainer {
+        margin: 10px auto 40px auto;
+        width: 60vw;
+    }
 }
-.dropdown-left {
-    float: left;
-}
-.dropdown-right {
-    float: right;
-}
-
-.box-nuevo {
-    border: 1.5px solid;
-    border-radius: 10px;
-    color: #0971CE;
-    height: 102px;
-    width: 284px;
-    background-image: url("../assets/back-nuevo.png");
-    float: left;
+.progress {
+    margin-top: 20px;
 }
 
-.box-nuevo:hover {
-    border-radius: 10px;
-    background-color: #0971CE;
-    background-image: url("../assets/back-nuevo-hover.png");
+.progress-bar {
+  width: 0;
+  -moz-animation: progress 1.5s forwards ease-out;
+  -webkit-animation: progress 1.5s forwards ease-out;
+  animation: progress 1.5s forwards ease-out;
+  color: #006EB6;
 }
 
-.box-usado {
-    border: 1.5px solid;
-    border-radius: 10px;
-    color: #0971CE;
-    height: 102px;
-    width: 284px;
-    background-image: url("../assets/back-usado.png");
-    float: right;
+@-moz-keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-
-.box-usado:hover {
-    border-radius: 10px;
-    background-color: #0971CE;
-    background-image: url("../assets/back-usado-hover.png");
+@-webkit-keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
