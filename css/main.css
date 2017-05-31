@@ -42,10 +42,9 @@ footer p {
     font-style: normal;
     vertical-align: middle;
 }
-
 .center {
     margin: 0 auto;
-    width: 80%;
+    width: 70vw;
 }
 
 .page-content {
@@ -138,6 +137,7 @@ footer p {
     color: #FFFFFF;
     padding: 0;
     margin: 0 auto;
+    width: 100vw;
 }
 
 .breadcrumb {
@@ -489,6 +489,8 @@ textarea::-webkit-input-placeholder {
 }
 .progress {
     margin-top: 20px;
+    height: 5px;
+    width: 100%;
 }
 
 .progress-bar {
