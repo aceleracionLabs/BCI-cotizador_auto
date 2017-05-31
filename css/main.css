@@ -591,6 +591,8 @@ textarea::-webkit-input-placeholder {
 
 .panel-primary {
   border-color: #4E4E4D;
+      background-color: #F2F2F1;
+
 }
 .panel-primary > .panel-heading {
   color: #fff;
@@ -606,4 +608,35 @@ textarea::-webkit-input-placeholder {
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #4E4E4D;
+}
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+.price h3 {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: red;
+}
+.price h4 {
+    display: block;
+    font-size: 40px;
+    line-height: 10px;
+    color:#333333;
+}
+
+span.price--line-through{
+  font-size: 30px;
+  color: red;
+}
+
+span.price--line-through{
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, 19.1% -7.9%, 81% 107.9%, color-stop(0, #F2F2F1), color-stop(.48, #F2F2F1), color-stop(.5, #000), color-stop(.52, #F2F2F1), color-stop(1, #F2F2F1));
+    background-image: -webkit-repeating-linear-gradient(287deg, #F2F2F1 0%, #F2F2F1 48%, red 50%, #F2F2F1 52%, #F2F2F1 100%);
+    background-image: repeating-linear-gradient(163deg, #F2F2F1 0%, #F2F2F1 48%, red 50%, #F2F2F1 52%, #F2F2F1 100%);
+    background-image: -ms-repeating-linear-gradient(287deg, #F2F2F1 0%, #F2F2F1 48%, red 50%, #F2F2F1 52%, #F2F2F1 100%); 
 }
