@@ -297,6 +297,8 @@ hr {
 .selectcontainer-deducible {
     margin: 10px auto 30px auto;
     display: inline;
+    display: flex;
+    justify-content: center;
     }
 
 .deducible h3 {
