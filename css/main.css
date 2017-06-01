@@ -18,21 +18,20 @@ h3 {
 p {
     color: #333333;
 }
-
-footer {
+.bc-footer {
     background-color: #4F4E4E;
-    width: 100%;
+    margin: 30px auto;
+    width: 100vw;
     height: 30vh;
-    margin: 0;
-    padding: 6vh 0 20px 10vw;
+    padding-top: 5vh;
 }
 
-footer img {
+.bc-footer img {
     width: 100px;
     height: 100%;
 }
 
-footer p {
+.bc-footer p {
     color: #FFF;
 }
 .modal-body p {
@@ -51,11 +50,7 @@ footer p {
     margin-bottom: 30px;
 }
 
-.bc-footer {
-    background-color: #4F4E4E;
-    margin-top: 30px;
-    width: 100vw;
-}
+
 
 .white-bg {
     background-color: #FFF;
@@ -108,8 +103,8 @@ footer p {
 .maintitle {
     background-color: #3F3F3F;
     background-image: url(../assets/diagonal.png);
+    margin: 50px 0 0 -15px;
     width: 100vw;
-    margin: 50px auto 0 auto;
 }
 
 .maintitle h1 {
@@ -128,21 +123,8 @@ footer p {
     padding-bottom: 5px;
 }
 
-.container {
-    color: #FFFFFF;
-    padding: 0;
-}
-
-.container-fluid {
-    color: #FFFFFF;
-    padding: 0;
-    margin: 0 auto;
-    width: 100vw;
-}
-
 .breadcrumb {
-    width: 100vw;
-    padding: 10px;
+    padding: 1px;
     margin: 20px auto;
     background: none;
     align-content: center;
@@ -151,9 +133,9 @@ footer p {
 
 .breadcrumb p {
     vertical-align: middle;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 32px;
-    padding-left: 40px;
+    padding-left: 38px;
 }
 
 .nopadding {
@@ -454,9 +436,6 @@ textarea::-webkit-input-placeholder {
 }
 
 @media (min-width:768px) {
-    .container-fluid {
-        margin: 0 auto;
-    }
     #navbar-desktop {
         visibility: visible;
     }
