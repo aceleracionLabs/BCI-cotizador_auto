@@ -67,14 +67,21 @@ p {
     height: 32px;
     margin-left: 14px;
 }
+.confirmation {
+    margin-top: 70px;
+}
 .confirmation h2 {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 .confirmation i {
     font-size: 60px;
     text-align: center;
     margin: 0 auto;
+}
+.confirmation img {
+    margin: 0 40%;
+    align-content: middle;
 }
 
 #navbar-desktop {
