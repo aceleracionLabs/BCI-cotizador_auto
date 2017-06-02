@@ -18,6 +18,7 @@ h3 {
 p {
     color: #333333;
 }
+
 .nomargin {
     margin-left: -15px;
     margin-right: -15px;
@@ -72,18 +73,22 @@ p {
     height: 32px;
     margin-left: 14px;
 }
+
 .confirmation {
     margin-top: 70px;
 }
+
 .confirmation h2 {
     font-size: 20px;
     text-align: center;
 }
+
 .confirmation i {
     font-size: 60px;
     text-align: center;
     margin: 0 auto;
 }
+
 .confirmation img {
     margin: 0 40%;
     align-content: middle;
@@ -116,6 +121,14 @@ p {
 #noCarousel {
     visibility: visible;
     height: 20px;
+}
+
+#plans-desktop {
+    display: none;
+}
+
+#plans-mobile {
+    display: block;
 }
 
 .navbar-brand {
@@ -160,7 +173,7 @@ p {
     align-content: center;
     display: flex;
     justify-content: center;
-    }
+}
 
 .breadcrumb p {
     vertical-align: middle;
@@ -228,8 +241,11 @@ hr {
 }
 
 .form-container {
-    margin: 0 5vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
+
 .form-container p {
     text-align: center;
     font-size: 11px;
@@ -238,8 +254,8 @@ hr {
 .form-container input {
     background-color: transparent;
     border-color: #0971CE;
-    padding: 5px 15px;
     height: 50px;
+    text-align: left;
 }
 
 .form-control:valid {
@@ -301,7 +317,7 @@ hr {
     display: inline;
     display: flex;
     justify-content: center;
-    }
+}
 
 .deducible h3 {
     text-align: center;
@@ -315,7 +331,6 @@ hr {
     border-radius: 5px;
     background: none;
     color: #333;
-    margin-right: 10px;
     height: 50px;
     text-align: left;
     padding-left: 14px;
@@ -471,6 +486,7 @@ hr {
 textarea::-webkit-input-placeholder {
     color: #FFF;
     font-size: 10px;
+    text-align: left;
 }
 
 .notice div:before {
@@ -505,6 +521,12 @@ textarea::-webkit-input-placeholder {
         visibility: hidden;
     }
     #myCarousel {
+        display: block;
+    }
+    #plans-desktop {
+        display: block;
+    }
+    #plans-mobile {
         display: block;
     }
     #noCarousel {
@@ -567,13 +589,132 @@ textarea::-webkit-input-placeholder {
         margin-bottom: 20px;
     }
     .box-deducible {
-    border: 1.3px solid;
-    border-radius: 5px;
-    color: #0971CE;
-    height: 50px;
-    width: 100px;
-    float: left;
-}
+        border: 1.3px solid;
+        border-radius: 5px;
+        color: #0971CE;
+        height: 40px;
+        width: 100px;
+        float: left;
+    }
+    .box-deducible p {
+        color: #0971CE;
+        text-align: center;
+        font-size: 18px;
+        vertical-align: middle;
+        padding-top: 6px;
+    }
+    /*carousel controls (perks)*/
+    .perks-carousel-control {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        filter: alpha(opacity=50);
+        opacity: .5;
+    }
+    .perks-carousel-control.left {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+        background-repeat: repeat-x;
+    }
+    .perks-carousel-control.right {
+        right: 0;
+        left: auto;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+        background-repeat: repeat-x;
+    }
+    .perks-carousel-control:hover,
+    .perks-carousel-control:focus {
+        color: #fff;
+        text-decoration: none;
+        filter: alpha(opacity=90);
+        outline: 0;
+        opacity: .9;
+    }
+    .perks-carousel-control .icon-prev,
+    .perks-carousel-control .icon-next,
+    .perks-carousel-control .glyphicon-chevron-left,
+    .perks-carousel-control .glyphicon-chevron-right {
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+        display: inline-block;
+        margin-top: -10px;
+    }
+    .perks-carousel-control .icon-prev,
+    .perks-carousel-control .glyphicon-chevron-left {
+        left: 50%;
+        margin-left: -10px;
+    }
+    .perks-carousel-control .icon-next,
+    .perks-carousel-control .glyphicon-chevron-right {
+        right: 50%;
+        margin-right: -10px;
+    }
+    .perks-carousel-control .icon-prev,
+    .perks-carousel-control .icon-next {
+        width: 20px;
+        height: 20px;
+        font-family: serif;
+        line-height: 1;
+    }
+    .perks-carousel-control .icon-prev:before {
+        content: '\2039';
+    }
+    .perks-carousel-control .icon-next:before {
+        content: '\203a';
+    }
+    .price-area {
+        width: 50vw;
+    }
+    .price-button {
+        width: 400px !important;
+         align-self: center;
+         margin: 0 auto;
+    }
+    .price {
+        display: block;
+        font-size: 40px;
+        line-height: 50px;
+        width: 50vw;
+    }
+    .price h5 {
+        font-size: 9px;
+        line-height: -10px;
+        color: red;
+        text-align: left;
+        padding-top: 0px;
+    }
+    .price h4 {
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+        color: red;
+    }
+    .price h3 {
+        display: block;
+        font-size: 28px;
+        line-height: 10px;
+        color: #333333;
+        text-align: left;
+    }
+    span.price--line-through {
+        font-size: 20px;
+        color: red;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+    span.price--line-through {
+        background-color: transparent;
+        background-image: -webkit-gradient(linear, 19.1% -7.9%, 81% 107.9%, color-stop(0, #F2F2F1), color-stop(.48, #F2F2F1), color-stop(.5, #000), color-stop(.52, #F2F2F1), color-stop(1, #F2F2F1));
+        background-image: -webkit-repeating-linear-gradient(287deg, #F2F2F1 0%, #F2F2F1 48%, red 50%, #F2F2F1 52%, #F2F2F1 100%);
+        background-image: repeating-linear-gradient(163deg, #F2F2F1 0%, #F2F2F1 48%, red 50%, #F2F2F1 52%, #F2F2F1 100%);
+        background-image: -ms-repeating-linear-gradient(287deg, #F2F2F1 0%, #F2F2F1 48%, red 50%, #F2F2F1 52%, #F2F2F1 100%);
+    }
 }
 
 .progress {
@@ -620,33 +761,33 @@ textarea::-webkit-input-placeholder {
 ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #FFF;
-    text-align: center;
+    text-align: left;
 }
 
 :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: #FFF;
     opacity: 1;
-    text-align: center;
+    text-align: left;
 }
 
 ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: #FFF;
     opacity: 1;
-    text-align: center;
+    text-align: left;
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #FFF;
-    text-align: center;
+    text-align: left;
 }
 
 ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #FFF;
-    text-align: center;
+    text-align: left;
 }
 
 .panel-primary {
@@ -672,9 +813,11 @@ textarea::-webkit-input-placeholder {
 .panel-primary>.panel-footer+.panel-collapse>.panel-body {
     border-bottom-color: #4E4E4D;
 }
+
 .price-area {
     width: 50vw;
 }
+
 .price-button {
     width: 180px;
 }
@@ -744,78 +887,87 @@ span.price--line-through {
 }
 
 
-
 /*carousel controls (perks)*/
 
 .perks-carousel-control {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 15%;
-  font-size: 20px;
-  color: #333;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  filter: alpha(opacity=50);
-  opacity: .5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    filter: alpha(opacity=50);
+    opacity: .5;
 }
+
 .perks-carousel-control.left {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
 }
+
 .perks-carousel-control.right {
-  right: 0;
-  left: auto;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
+    right: 0;
+    left: auto;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
 }
+
 .perks-carousel-control:hover,
 .perks-carousel-control:focus {
-  color: #fff;
-  text-decoration: none;
-  filter: alpha(opacity=90);
-  outline: 0;
-  opacity: .9;
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9;
 }
+
 .perks-carousel-control .icon-prev,
 .perks-carousel-control .icon-next,
 .perks-carousel-control .glyphicon-chevron-left,
 .perks-carousel-control .glyphicon-chevron-right {
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-  display: inline-block;
-  margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
 }
+
 .perks-carousel-control .icon-prev,
 .perks-carousel-control .glyphicon-chevron-left {
-  left: 50%;
-  margin-left: -10px;
+    left: 50%;
+    margin-left: -10px;
 }
+
 .perks-carousel-control .icon-next,
 .perks-carousel-control .glyphicon-chevron-right {
-  right: 50%;
-  margin-right: -10px;
+    right: 50%;
+    margin-right: -10px;
 }
+
 .perks-carousel-control .icon-prev,
 .perks-carousel-control .icon-next {
-  width: 20px;
-  height: 20px;
-  font-family: serif;
-  line-height: 1;
+    width: 20px;
+    height: 20px;
+    font-family: serif;
+    line-height: 1;
 }
+
 .perks-carousel-control .icon-prev:before {
-  content: '\2039';
+    content: '\2039';
 }
+
 .perks-carousel-control .icon-next:before {
-  content: '\203a';
+    content: '\203a';
 }
 
 .btn-file {
     position: relative;
     overflow: hidden;
 }
+
 .btn-file input[type=file] {
     position: absolute;
     top: 0;
