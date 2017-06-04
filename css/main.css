@@ -543,7 +543,7 @@ textarea::-webkit-input-placeholder {
         display: block;
     }
     #plans-mobile {
-        display: block;
+        display: none;
     }
     #noCarousel {
         visibility: hidden;
@@ -984,8 +984,14 @@ span.price--line-through {
 }
 
 .btn-file {
-    position: relative;
-    overflow: hidden;
+    background-color: transparent;
+    border-color: #0971CE;
+    height: 50px;
+    text-align: left;
+    flex-grow: 1;
+    width: 100%;
+    vertical-align: middle;
+    padding-top: 13px;
 }
 
 .btn-file input[type=file] {
