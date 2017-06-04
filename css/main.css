@@ -72,9 +72,10 @@ p {
 }
 
 .pagaseguro img {
-    width: 28px;
-    height: 28px;
+  width: 119px;
+  height: 33px;
     margin-left: 14px;
+    overflow: hidden;
 }
 
 .socialmedia img {
@@ -134,7 +135,7 @@ p {
 }
 
 #noCarousel {
-    visibility: visible;
+    display: block;
     height: 20px;
 }
 
@@ -999,7 +1000,6 @@ span.price--line-through {
     top: 0;
     right: 0;
     min-width: 100%;
-    min-height: 100%;
     font-size: 100px;
     text-align: right;
     filter: alpha(opacity=0);
