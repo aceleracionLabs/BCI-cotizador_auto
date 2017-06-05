@@ -40,6 +40,7 @@ p {
 .bc-footer-item {
   flex-grow: 1;
   padding-left: 5vw;
+  width: 100%;
   }
 
 .bc-footer img {
@@ -1041,7 +1042,7 @@ span.price--line-through {
    margin-right: 5px;
 }
 
-/* Roman */
+/* Floating label */
 
 .floating-label {
   position: relative;
@@ -1049,6 +1050,7 @@ span.price--line-through {
   left: 20px;
   top: -35px;
   transition: 0.2s ease all;
+  color: #333;
 }
 
 input:focus ~ .floating-label,
@@ -1058,4 +1060,5 @@ input:not(:focus):valid ~ .floating-label{
   left: 20px;
   font-size: 10px;
   opacity: 1;
+  color: #333;
 }
