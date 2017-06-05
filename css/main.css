@@ -28,6 +28,9 @@ p {
     display: flex;
     width: 80vw;
 }
+.container-last {
+    width: 55vw;
+}
 
 .bc-footer {
     background-color: #4F4E4E;
@@ -113,6 +116,8 @@ p {
 .confirmation img {
     margin: 0 auto;
     align-content: middle;
+        justify-content: center;
+
 }
 
 #navbar-desktop {
