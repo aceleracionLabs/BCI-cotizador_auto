@@ -1040,3 +1040,22 @@ span.price--line-through {
    float:left;
    margin-right: 5px;
 }
+
+/* Roman */
+
+.floating-label {
+  position: relative;
+  pointer-events: none;
+  left: 20px;
+  top: -35px;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: -50px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 10px;
+  opacity: 1;
+}
