@@ -196,16 +196,16 @@
       </div>
 
 
-      <div class="container center">
-
-
-        <div class="row selectcontainer">
+     <div class="container center">
           <h3>Selecciona tu tipo de vehículo:</h3>
 
-          <div class="col-sm-6 col-md-6 col-lg-6 nopadding">
+
+       <div class="selectcontainer">
+
+          <div class=" nopadding selectcontainer-item">
          <a href="seleccion-usado.html">   <div class="box-usado"></div></a>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-6 nopadding pull-right">
+          <div class=" nopadding pull-right selectcontainer-item">
             <a href="seleccion-nuevo.html"><div class="box-nuevo"></div></a>
           </div>
         </div>
@@ -216,17 +216,23 @@
 
       <div class="form-container">
         <form name="sentMessage" id="contactForm" novalidate>
-        
+          <div class="control-group form-group">
+            <div class="controls">
+              <input type="text" class="form-control loading" id="name" required data-validation-required-message="Por favor ingresa tu nombre."
+                placeholder="Patente" autofocus>
+              <p class="help-block"></p>
+            </div>
+          </div>
           <div class="control-group form-group">
             <div class="controls">
               <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor ingresa tu Email."
-                placeholder="Marca" autofocus>
+                placeholder="Marca">
             </div>
           </div>
 
 
           <div class="btn-group">
-            <div class="dropdown">
+            <div class="dropdown form-control-inline">
               <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">Modelo
   <span class="caret"></span></button>
               <ul class="dropdown-menu">
@@ -236,7 +242,7 @@
                 <li><a href="#">Opción 3</a></li>
               </ul>
             </div>
-            <div class="dropdown">
+            <div class="dropdown form-control-inline">
               <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">Año
   <span class="caret"></span></button>
               <ul class="dropdown-menu">
@@ -248,12 +254,13 @@
             </div>
           </div>
 
-          <p>Se solicitará factura del vehículo con una antigüedad no mayor a 48 hrs.</p>
+
+          <p>Se solicitará factura del vehículo con una antiguedad no mayor a 48 hrs.</p>
 
 
           <div id="success"></div>
           <!-- For success/fail messages -->
-          <a href="propuesta.html" class="btn btn-primary next-button" role="button" >Propuesta</a>
+          <a href="seleccion.html" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Propuesta</a>
 
         </form>
       </div>
