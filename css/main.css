@@ -836,9 +836,9 @@ textarea::-webkit-input-placeholder {
         width: 55vw;
     }
     .form-control-inline {
-        width: auto;
-        float: left;
         margin-right: 5px;
+        flex-grow: 1;
+
     }
     .container-footer {
     display: flex;
@@ -851,11 +851,11 @@ textarea::-webkit-input-placeholder {
     height: 50px;
     text-align: left;
     padding-left: 14px;
-    width: 27vw;
     margin-bottom: 5px;
 }
 .btn-group {
-    width: 55vw;
+    display: flex;
+    justify-content: space-between;
 }
 }
 
