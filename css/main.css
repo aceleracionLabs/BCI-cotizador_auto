@@ -31,6 +31,11 @@ p {
 .container-last {
     width: 55vw;
 }
+.checkbox label {
+    padding-bottom: 20px;
+      vertical-align: bottom;
+
+}
 
 .bc-footer {
     background-color: #4F4E4E;
@@ -275,6 +280,7 @@ hr {
 .form-container p {
     text-align: center;
     font-size: 11px;
+    margin-top: 10px;
 }
 
 .form-container input {
@@ -368,8 +374,8 @@ hr {
     height: 50px;
     text-align: left;
     padding-left: 14px;
-    margin-bottom: 15px;
     width: 27vw;
+    margin-bottom: 5px;
 }
 
 .dropdown-left {
@@ -397,6 +403,16 @@ hr {
     background-image: url("../assets/back-nuevo-mobile.png");
     float: left;
 }
+.box-nuevo-inpage {
+    border: 1.5px solid;
+    border-radius: 5px;
+    color: #0971CE;
+    height: 90px;
+    width: 160px;
+    background-color: #0971CE;
+    background-image: url("../assets/back-nuevo-hover-mobile.png");
+    float: left;
+}
 
 .box-nuevo:hover {
     border-radius: 5px;
@@ -411,6 +427,16 @@ hr {
     height: 90px;
     width: 160px;
     background-image: url("../assets/back-usado-mobile.png");
+    float: right;
+}
+.box-usado-inpage {
+    border: 1.5px solid;
+    border-radius: 5px;
+    color: #0971CE;
+    height: 90px;
+    width: 160px;
+    background-color: #0971CE;
+    background-image: url("../assets/back-usado-hover-mobile.png");
     float: right;
 }
 
@@ -589,6 +615,16 @@ textarea::-webkit-input-placeholder {
         background-image: url("../assets/back-nuevo.png");
         float: left;
     }
+    .box-nuevo-inpage {
+        border: 1.5px solid;
+        border-radius: 10px;
+        color: #0971CE;
+        height: 102px;
+        width: 284px;
+        background-color: #0971CE;
+        background-image: url("../assets/back-nuevo-hover.png");
+        float: left;
+    }
     .box-nuevo:hover {
         border-radius: 10px;
         background-color: #0971CE;
@@ -601,6 +637,16 @@ textarea::-webkit-input-placeholder {
         height: 102px;
         width: 284px;
         background-image: url("../assets/back-usado.png");
+        float: right;
+    }
+    .box-usado-inpage {
+        border: 1.5px solid;
+        border-radius: 10px;
+        color: #0971CE;
+        height: 102px;
+        width: 284px;
+        background-color: #0971CE;
+        background-image: url("../assets/back-usado-hover.png");
         float: right;
     }
     .box-usado:hover {
