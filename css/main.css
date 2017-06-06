@@ -299,7 +299,7 @@ hr {
 
 .next-button {
     background-color: #0071CE;
-    width: 100%;
+    width: 55vw;
     height: 50px;
     vertical-align: middle;
     margin-top: 20px;
@@ -384,6 +384,9 @@ hr {
 
 .dropdown-right {
     float: right;
+}
+.btn-group {
+    width: 55vw;
 }
 
 .left {
@@ -1068,7 +1071,7 @@ span.price--line-through {
     height: 50px;
     text-align: left;
     flex-grow: 1;
-    width: 100%;
+    width: 55vw;
     vertical-align: middle;
     padding-top: 13px;
 }

@@ -448,7 +448,7 @@
 
           <div class="item2-plans">
                
-            <div id="carousel-perks" class="carousel slide" data-ride="carousel" >
+            <div id="carousel-perks" class="carousel slide" data-ride="carousel" data-interval="false" >
                   
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
@@ -653,8 +653,9 @@
 
     <!-- Script to Activate the Carousel -->
     <script>
-      $('.carousel').carousel({
-        interval: 5000 //changes the speed
+      $('.carousel-perks').carousel({
+        interval: false
+
       })      
     </script>
     <script>
