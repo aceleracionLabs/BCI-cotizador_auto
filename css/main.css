@@ -825,7 +825,11 @@ textarea::-webkit-input-placeholder {
 #carousel-perks {
      width: 55vw;
      }
-
+.form-control-inline {
+   width: auto;
+   float:left;
+   margin-right: 5px;
+}
 }
 
 .progress {
@@ -1101,11 +1105,6 @@ span.price--line-through {
     background: white;
     cursor: inherit;
     display: block;
-}
-.form-control-inline {
-   width: auto;
-   float:left;
-   margin-right: 5px;
 }
 
 /* Floating label */
