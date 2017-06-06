@@ -862,7 +862,8 @@ textarea::-webkit-input-placeholder {
 ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #FFF;
-    text-align: left;
+    text-align: center;
+
 }
 
 :-moz-placeholder {
