@@ -306,6 +306,15 @@ hr {
     padding-top: 15px;
 }
 
+.next-button-plans {
+    background-color: #0071CE;
+    width: 35vw;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
 .loading {
     background-color: #ffffff;
     background-image: url("../assets/Loading_icon.gif");
@@ -767,7 +776,7 @@ textarea::-webkit-input-placeholder {
     }
     .price h5 {
         font-size: 9px;
-        line-height: -10px;
+        line-height: 1%;
         color: red;
         text-align: left;
         padding-top: 0px;
@@ -780,10 +789,11 @@ textarea::-webkit-input-placeholder {
     }
     .price h3 {
         display: block;
-        font-size: 35px;
-        line-height: 10px;
+        font-size: 40px;
+        line-height: 50%;
         color: #333333;
         text-align: left;
+        margin-top: 40px;
     }
     span.price--line-through {
         font-size: 20px;
@@ -948,10 +958,11 @@ textarea::-webkit-input-placeholder {
 
 .price h3 {
     display: block;
-    font-size: 28px;
+    font-size: 35px;
     line-height: 10px;
     color: #333333;
     text-align: left;
+    margin-top: 30px;
 }
 
 span.price--line-through {
