@@ -28,27 +28,30 @@ p {
     display: flex;
     width: 80vw;
 }
+
 .container-last {
     width: 55vw;
 }
+
 .checkbox label {
     padding-bottom: 20px;
-      vertical-align: bottom;
-
+    vertical-align: bottom;
 }
+
 .bc-footer {
     background-color: #4F4E4E;
     margin: 30px auto 0 auto;
     width: 100vw;
     height: 30vh;
     padding-top: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 .bc-footer-item {
-  flex-grow: 1;
-  padding-left: 5vw;
-  width: 100%;
-  }
+    padding-left: 5vw;
+    width: 100%;
+}
 
 .bc-footer img {
     width: 100px;
@@ -68,7 +71,7 @@ p {
 }
 
 .center {
-   width: 100%;
+    width: 100%;
 }
 
 .page-content {
@@ -80,8 +83,8 @@ p {
 }
 
 .pagaseguro img {
-  width: 119px;
-  height: 33px;
+    width: 119px;
+    height: 33px;
     margin-left: 14px;
     overflow: hidden;
 }
@@ -114,14 +117,12 @@ p {
     text-align: center;
     margin: 0 auto;
     flex-grow: 1;
-
 }
 
 .confirmation img {
     margin: 0 auto;
     align-content: middle;
-        justify-content: center;
-
+    justify-content: center;
 }
 
 #navbar-desktop {
@@ -349,9 +350,9 @@ hr {
     display: flex;
     justify-content: center;
 }
-.selectcontainer-item {
-  flex-grow: 1;
 
+.selectcontainer-item {
+    flex-grow: 1;
 }
 
 .selectcontainer h3 {
@@ -393,6 +394,7 @@ hr {
 .dropdown-right {
     float: right;
 }
+
 .btn-group {
     width: 55vw;
 }
@@ -414,6 +416,7 @@ hr {
     background-image: url("../assets/back-nuevo-mobile.png");
     float: left;
 }
+
 .box-nuevo-inpage {
     border: 1.5px solid;
     border-radius: 5px;
@@ -440,6 +443,7 @@ hr {
     background-image: url("../assets/back-usado-mobile.png");
     float: right;
 }
+
 .box-usado-inpage {
     border: 1.5px solid;
     border-radius: 5px;
@@ -764,8 +768,8 @@ textarea::-webkit-input-placeholder {
     }
     .price-button {
         width: 400px !important;
-         align-self: center;
-         margin: 0 auto;
+        align-self: center;
+        margin: 0 auto;
     }
     .price {
         display: block;
@@ -808,27 +812,27 @@ textarea::-webkit-input-placeholder {
         background-image: -ms-repeating-linear-gradient(287deg, #F2F2F1 0%, #F2F2F1 48%, red 50%, #F2F2F1 52%, #F2F2F1 100%);
     }
     .form-container input {
-    width: 55vw;
-    flex-grow: 1;
-}
+        width: 55vw;
+        flex-grow: 1;
+    }
     .container-plans {
-    display: flex;
-    justify-content: center;
-}
+        display: flex;
+        justify-content: center;
+    }
     .item1-plans {
-    flex-grow: 1;
-}
+        flex-grow: 1;
+    }
     .item2-plans {
-    flex-grow: 3;
-}
-#carousel-perks {
-     width: 55vw;
-     }
-.form-control-inline {
-   width: auto;
-   float:left;
-   margin-right: 5px;
-}
+        flex-grow: 3;
+    }
+    #carousel-perks {
+        width: 55vw;
+    }
+    .form-control-inline {
+        width: auto;
+        float: left;
+        margin-right: 5px;
+    }
 }
 
 .progress {
@@ -876,7 +880,6 @@ textarea::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #FFF;
     text-align: center;
-
 }
 
 :-moz-placeholder {
@@ -1106,23 +1109,24 @@ span.price--line-through {
     display: block;
 }
 
+
 /* Floating label */
 
 .floating-label {
-  position: relative;
-  pointer-events: none;
-  left: 20px;
-  top: -35px;
-  transition: 0.2s ease all;
-  color: #333;
+    position: relative;
+    pointer-events: none;
+    left: 20px;
+    top: -35px;
+    transition: 0.2s ease all;
+    color: #333;
 }
 
-input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label{
-  top: -50px;
-  bottom: 10px;
-  left: 20px;
-  font-size: 10px;
-  opacity: 1;
-  color: #333;
+input:focus~.floating-label,
+input:not(:focus):valid~.floating-label {
+    top: -50px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 10px;
+    opacity: 1;
+    color: #333;
 }
