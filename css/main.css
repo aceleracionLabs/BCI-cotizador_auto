@@ -2,6 +2,8 @@
 
 /* CSS Document */
 
+/*main-items*/
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
     font-family: 'Open Sans', sans-serif;
@@ -849,7 +851,7 @@ textarea::-webkit-input-placeholder {
         color: #333;
         height: 50px;
         text-align: left;
-        padding-left: 14px;
+        padding-left: 20px;
         margin-bottom: 5px;
     }
     .btn-group {
@@ -1143,7 +1145,6 @@ span.price--line-through {
     transition: 0.2s ease all;
     color: #333;
 }
-
 input:focus~.floating-label,
 input:not(:focus):valid~.floating-label {
     top: -50px;
