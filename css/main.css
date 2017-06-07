@@ -18,6 +18,7 @@ h3 {
 p {
     color: #333333;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -400,7 +401,6 @@ hr {
 .dropdown-right {
     float: right;
 }
-
 
 .left {
     float: left;
@@ -838,25 +838,24 @@ textarea::-webkit-input-placeholder {
     .form-control-inline {
         margin-right: 5px;
         flex-grow: 1;
-
     }
     .container-footer {
-    display: flex;
-}
-.btn-dropdown {
-    border: 1px solid #0971CE;
-    border-radius: 5px;
-    background: none;
-    color: #333;
-    height: 50px;
-    text-align: left;
-    padding-left: 14px;
-    margin-bottom: 5px;
-}
-.btn-group {
-    display: flex;
-    justify-content: space-between;
-}
+        display: flex;
+    }
+    .btn-dropdown {
+        border: 1px solid #0971CE;
+        border-radius: 5px;
+        background: none;
+        color: #333;
+        height: 50px;
+        text-align: left;
+        padding-left: 14px;
+        margin-bottom: 5px;
+    }
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .progress {
