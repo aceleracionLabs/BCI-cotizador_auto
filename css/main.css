@@ -2,6 +2,7 @@
 
 /* CSS Document */
 
+
 /*main-items*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -74,6 +75,11 @@ form {
     font-size: 15px;
     font-style: regular;
     vertical-align: middle;
+}
+
+.modal-body img {
+    width: 85%;
+    margin: 0 auto;
 }
 
 .center {
@@ -858,12 +864,21 @@ textarea::-webkit-input-placeholder {
         display: flex;
         justify-content: space-between;
     }
+    .progress {
+        margin-top: 20px;
+        height: 5px;
+        width: 100%;
+    }
+    .modal-body img {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .progress {
     margin-top: 20px;
     height: 5px;
-    width: 100%;
+    width: 90%;
 }
 
 .progress-bar {
@@ -1145,6 +1160,7 @@ span.price--line-through {
     transition: 0.2s ease all;
     color: #333;
 }
+
 input:focus~.floating-label,
 input:not(:focus):valid~.floating-label {
     top: -50px;
