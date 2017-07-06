@@ -1170,3 +1170,7 @@ input:not(:focus):valid~.floating-label {
     opacity: 1;
     color: #333;
 }
+.margin-checkbox {
+    float: left; 
+    margin-top: -15px;
+}
